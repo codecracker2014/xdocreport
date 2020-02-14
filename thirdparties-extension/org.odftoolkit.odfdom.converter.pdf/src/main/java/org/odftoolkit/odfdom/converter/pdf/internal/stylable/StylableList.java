@@ -116,9 +116,10 @@ public class StylableList
             Font symbolFont = symbol.getFont();
             if ( symbolFont.isStandardFont() )
             {
-                ArrayList<Chunk> chunks = p.getChunks();
-                for ( Chunk chunk : chunks )
+                ArrayList chunks = p.getChunks();
+                for ( Object elem : chunks )
                 {
+                    Chunk chunk = (Chunk)elem;
                     // use first specified font
                     if ( !chunk.getFont().isStandardFont() )
                     {

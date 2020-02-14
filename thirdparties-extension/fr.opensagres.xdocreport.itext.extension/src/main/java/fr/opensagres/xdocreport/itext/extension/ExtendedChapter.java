@@ -24,6 +24,8 @@
  */
 package fr.opensagres.xdocreport.itext.extension;
 
+import java.util.ArrayList;
+
 import com.lowagie.text.Chapter;
 import com.lowagie.text.MarkedSection;
 import com.lowagie.text.Paragraph;
@@ -68,9 +70,9 @@ public class ExtendedChapter
         if ( computedTitle == null )
         {
             bookmarkTitleParagraph =
-                ExtendedSection.ancestorConstructTitle( getParagraphFactory(), title, numbers, numberDepth, numberStyle );
+                ExtendedSection.ancestorConstructTitle( getParagraphFactory(), title, (ArrayList)numbers, numberDepth, numberStyle );
             computedTitle =
-                ExtendedSection.constructTitle( getParagraphFactory(), bookmarkTitleParagraph, numbers, numberDepth,
+                ExtendedSection.constructTitle( getParagraphFactory(), bookmarkTitleParagraph, (ArrayList)numbers, numberDepth,
                                                 numberStyle, cell );
         }
         return computedTitle;

@@ -89,9 +89,10 @@ public class StylableAnchor
     public Element getElement()
     {
         // underline font if not explicitly set
-        ArrayList<Chunk> chunks = getChunks();
-        for ( Chunk chunk : chunks )
+        ArrayList chunks = getChunks();
+        for ( Object elem : chunks )
         {
+            Chunk chunk = (Chunk)elem;
             Font f = chunk.getFont();
             if ( f != null && !f.isUnderlined() )
             {
