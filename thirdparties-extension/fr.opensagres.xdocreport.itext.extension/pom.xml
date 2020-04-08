@@ -6,6 +6,7 @@
 		<version>1.0.4</version>
 	</parent>
 	<artifactId>fr.opensagres.xdocreport.itext.extension</artifactId>
+	<version>1.0.4.1</version>
 	<dependencies>
 		<dependency>
 			<groupId>com.github.librepdf</groupId>

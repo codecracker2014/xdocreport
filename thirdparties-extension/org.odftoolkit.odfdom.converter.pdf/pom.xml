@@ -6,7 +6,8 @@
 		<artifactId>thirdparties-extension</artifactId>
 		<version>1.0.4</version>
 	</parent>
-  <dependencies>
+	<version>1.0.4.1</version>
+	<dependencies>
   	<dependency>
   		<groupId>fr.opensagres.xdocreport</groupId>
   		<artifactId>org.odftoolkit.odfdom.converter.core</artifactId>
@@ -15,7 +16,7 @@
 	<dependency>
 		<groupId>fr.opensagres.xdocreport</groupId>
 		<artifactId>fr.opensagres.xdocreport.itext.extension</artifactId>
-		<version>1.0.4</version>
+		<version>1.0.4.1</version>
 	</dependency>  	
   </dependencies>
 </project>
